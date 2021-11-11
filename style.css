@@ -199,7 +199,7 @@ body {
 
   33% {
     transform: translateX(200vh);
-    background-color: #ff4500;
+    background-color: #58d60f;
   }
 
   66% {
@@ -229,11 +229,12 @@ body {
   }
 
   66% {
-    transform: translateY(45vh);
+    transform: translateY(85vh);
+    background-color: #3bf7c2;
   }
 
   100% {
-    transform: translateX(-75vh);
+    transform: translateX(-145vh);
   }
 }
   
