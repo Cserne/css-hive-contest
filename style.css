@@ -73,6 +73,7 @@ body {
   }
 
   60% {
+    transform: rotateY(180deg);
     background-color: #18c9e0;
   }
   
@@ -101,7 +102,8 @@ body {
   }
     
   33% {
-      background-color: #f7a13f;
+    transform: rotateX(180deg);
+    background-color: #f7a13f;
   }
 
   50% {
