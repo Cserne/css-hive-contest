@@ -1,386 +1,337 @@
 * {
-    margin:0;
-    padding:0;
-    border:0;
-    background:transparent;
-    outline:none;
-    text-decoration:none;
-    outline:none;
-    font-family:inherit;
-    box-sizing:border-box;
+  margin:0;
+  padding:0;
+  border:0;
+  background:transparent;
+  outline:none;
+  text-decoration:none;
+  outline:none;
+  font-family:inherit;
+  box-sizing:border-box;
 }
   
 ol, ul, li {
-    list-style:none;
-    display:block;
+  list-style:none;
+  display:block;
 }
   
 table {
-    border-collapse: collapse;
-    border-spacing:0;
+  border-collapse: collapse;
+  border-spacing:0;
 }
   
 a, img {
-    border: none;
+  border: none;
 }
   
 button, a {
-    cursor: pointer;
-    color: inherit;
+  cursor: pointer;
+  color: inherit;
 }
   
 textarea {
-    resize: none;
+  resize: none;
 }
   
 button, input, textarea, select {
-    appearance: none !important;
-    -webkit-appearance: none !important;
-    border-radius: 0;
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  border-radius: 0;
 }
   
 body {
-    font-family: 'Overpass', sans-serif;
+  font-family: 'Overpass', sans-serif;
 
-    background-color: #93bcdd;
+  background-color: #93bcdd;
 }
 
 .allDivs {
-    width: 10vh;
-    height: 10vh;
-    border-radius: 50%;
+  position: absolute;
+  width: 8vh;
+  height: 8vh;
+  border-radius: 50%;
 
-    background-color: bisque;
+  background-color: bisque;
+}
+
+.leftDivs {
+  left: 0;
+  animation: leftAnim 1.7s ease-in-out forwards infinite alternate;
+}
+
+.rightDivs {
+  right: 0;
+  animation: rightAnim 1.7s ease-in-out forwards infinite alternate;
 }
 
 #div1 {
-    background-color: #a385f7;
-    animation: div1Anim 1.5s ease-in-out forwards infinite alternate;
+  top: 0;
+  background-color: #a385f7;
+  animation: div1Anim 1.4s ease-in-out infinite alternate;
 }
 
 @keyframes div1Anim {
-    0% {
-      transform: translateX(0);
-    }
-  
-    25% {
-      background-color: #df133C;
-    }
+  0% {
+    transform: translateX(0);
+  }
 
-    50%{
-      background-color: #84eb1e;
-    }
+  33% {
+    transform: translateY(85vh);
+    background-color: orangered;
+  }
 
-    75%{
-      background-color: #f7a13f;
-    }
-  
-    100% {
-      transform: translateX(95vw);
-      background-color: #18c9e0;
-    }
+  100% {
+    transform: translateX(75vw);
+  }
 }
 
 #div2 {
-    background-color: #84eb1e;
-    animation: div1Anim 1.5s ease-in-out forwards infinite alternate 1s;
-  }
-  
-@keyframes div1Anim {
-    0% {
-      transform: translateX(0);
-    }
-    
-    25% {
-      background-color: #df133C;
-    }
-  
-    50%{
-      background-color: #84eb1e;
-    }
-  
-    75%{
-      background-color: #f7a13f;
-    }
-    
-    100% {
-      transform: translateX(95vw);
-      background-color: #18c9e0;
-    }
+  top: 10vh;
+  background-color: #84eb1e;
+  animation-delay: 1s;
 }
 
 #div3 {
-    background-color: #f7a13f;
-    animation: div1Anim 1.5s ease-in-out forwards infinite alternate 1.5s;
-  }
+  top: 20vh;
+  background-color: #f7a13f; 
+  animation-delay: 0.5s;  
+}
   
-@keyframes div1Anim {
+@keyframes leftAnim {
     0% {
       transform: translateX(0);
     }
     
-    25% {
+    20% {
       background-color: #df133C;
     }
   
-    50%{
+    40%{
       background-color: #84eb1e;
     }
+
+    60% {
+      background-color: #18c9e0;
+    }
   
-    75%{
+    80%{
       background-color: #f7a13f;
     }
     
     100% {
       transform: translateX(95vw);
-      background-color: #18c9e0;
+      background-color: #db2eca;
     }
 }
 
 #div4 {
-    background-color: #db2eca;
-    animation: div4Anim 1s ease-in-out forwards infinite alternate;
+  top: 30vh;
+  background-color: #db2eca;
+  animation-delay: 0.25s;
 }
 
-@keyframes div4Anim {
-    0% {
-      transform: translateX(0);
-    }
-  
-    33% {
-      background-color: #58d60f;
-    }
-  
-    100% {
-      transform: translateX(95vw);
-    }
-}
 
 #div5 {
-    background-color: #58d60f;
-    animation: div5Anim 1s ease-in-out forwards infinite alternate 0.5s;
-}
-
-@keyframes div5Anim {
-    0% {
-      transform: translateX(0);
-    }
-  
-    33% {
-      background-color: #f837cb;
-    }
-  
-    100% {
-      transform: translateX(95vw);
-    }
+  top: 40vh;
+  background-color: #58d60f;
+  animation-delay: 0.75s;
 }
 
 #div6 {
-    background-color: #18c9e0;
-    animation: div6Anim 1s ease-in-out forwards infinite alternate 0.25s;
-}
-
-@keyframes div6Anim {
-    0% {
-      transform: translateX(0);
-    }
-  
-    33% {
-      background-color: #f837cb;
-    }
-  
-    100% {
-      transform: translateX(95vw);
-    }
+  top: 50vh;
+  background-color: #18c9e0;
+  animation-delay: 0.1s;
 }
 
 #div7 {
-    background-color: #f837cb;
-    animation: div7Anim 1s ease-in-out forwards infinite alternate;
-}
-
-@keyframes div7Anim {
-    0% {
-      transform: translateX(0);
-    }
-  
-    33% {
-      background-color: #3bf7c2;
-    }
-  
-    100% {
-      transform: translateX(95vw);
-    }
+  top: 60vh;
+  background-color: #f837cb;
+  animation-delay: 0.4s;
 }
 
 #div8 {
-    background-color: #facf5b;
-    animation: div8Anim 1s ease-in-out forwards infinite alternate 0.5s;
-}
-
-@keyframes div8Anim {
-    0% {
-      transform: translateX(0);
-    }
-  
-    33% {
-      background-color: #f837cb;
-    }
-  
-    100% {
-      transform: translateX(95vw);
-    }
+  top: 70vh;
+  background-color: #facf5b;
+  animation-delay: 0.7s;
 }
 
 #div9 {
-    background-color: #3bf7c2;
-    animation: div9Anim 1s ease-in-out forwards infinite alternate 0.25s;
-}
-
-@keyframes div9Anim {
-    0% {
-      transform: translateX(0);
-    }
-  
-    33% {
-      background-color: #f837cb;
-    }
-  
-    100% {
-      transform: translateX(95vw);
-    }
+  top: 80vh;
+  background-color: #3bf7c2;
+  animation-delay: 0.85s;
 }
 
 #div10 {
-    background-color: #df133C;
-    animation: div10Anim 1s ease-in-out forwards infinite alternate;
+  top: 90vh;
+  background-color: #df133C;
+  animation: div10Anim 1.4s ease-in-out infinite alternate 1s;
 }
 
 @keyframes div10Anim {
-    0% {
-      transform: translateX(0);
-    }
-  
-    33% {
-      background-color: #f837cb;
-    }
-  
-    100% {
-      transform: translateX(95vw);
-    }
+  0% {
+    transform: translateX(0);
+  }
+
+  33% {
+    transform: translateX(200vh);
+    background-color: orangered;
+  }
+
+  66% {
+    transform: translateY(-45vh);
+  }
+
+  100% {
+    transform: translateX(75vh);
+  }
 }
 
 #div11 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: #df133C;
-    animation: div11Anim 1s ease-in-out forwards infinite alternate;
-}
-  
-@keyframes div11Anim {
-    0% {
-        transform: translateX(0);
-    }
-    
-    33% {
-        background-color: rgb(20, 180, 220);
-    }
-    
-    100% {
-        transform: translateX(-95vw);
-    }
+  top: 0;
+  right: 0;
+  background-color: #df133C;
+  animation: child9Anim 1.4s ease-in-out infinite alternate;
 }
 
-#div12 {
-    position: absolute;
-    top: 10vh;
-    right: 0vh;
-    background-color: #3bf7c2;
-    animation: div2Anim 1.5s ease-in-out forwards infinite alternate 0.5s;
+@keyframes child9Anim {
+  0% {
+    transform: translateX(0%);
   }
-  
-@keyframes div2Anim {
-    0% {
-        transform: translateX(0);
-    }
-    
-    33% {
-        background-color: #f7a13f;
-    }
-    
-    100% {
-        transform: translateX(-95vw);
-    }
+
+  33% {
+    transform: translateY(85vh);
+    background-color: red;
+  }
+
+  66% {
+    background-color: royalblue;
+  }
+
+  100% {
+    transform: translateX(-75vh);
+  }
 }
+  
+#div12 {
+  top: 10vh;
+  background-color: #3bf7c2;
+  animation-delay: 0.85s;
+  }
 
 #div13 {
-    position: absolute;
-    top: 20vh;
-    right: 0vh;
-    background-color: #facf5b;
+  top: 20vh;
+  background-color: #facf5b;
+  animation-delay: 0.7s;
 }
 
 #div14 {
-    position: absolute;
-    top: 30vh;
-    right: 0vh;
-    background-color: #f837cb;
+  top: 30vh;
+  background-color: #f837cb;
+  animation-delay: 0.4s;
 }
 
 #div15 {
-    position: absolute;
-    top: 40vh;
-    right: 0vh;
-    background-color: #18c9e0;
+  top: 40vh;
+  background-color: #18c9e0;
+  animation-delay: 0.1s;
 }
 
 #div16 {
-    position: absolute;
-    top: 50vh;
-    right: 0vh;
-    background-color: #58d60f;
+  top: 50vh;
+  background-color: #58d60f;
+  animation-delay: 0.75s;
 }
 
 #div17 {
-    position: absolute;
-    top: 60vh;
-    right: 0vh;
-    background-color: #db2eca;
+  top: 60vh;
+  background-color: #db2eca;
+  animation-delay: 0.25s;
 }
 
 #div18 {
-    position: absolute;
-    top: 70vh;
-    right: 0vh;
-    background-color: #f7a13f;
+  top: 70vh;
+  background-color: #f7a13f;
+  animation-delay: 0.5s; 
 }
 
 #div19 {
-    position: absolute;
-    top: 80vh;
-    right: 0vh;
-    background-color: #84eb1e;
+  top: 80vh;
+  background-color: #84eb1e;
+  animation-delay: 1s;
 }
 
 #div20 {
-    position: absolute;
-    top: 90vh;
-    right: 0vh;
+  top: 90vh;
+  right: 0;
+  background-color: #a385f7;
+  animation: div20Anim 1.4s ease-in-out infinite alternate 1s;
+}
+
+@keyframes div20Anim {
+  0% {
+    transform: translateX(0);
+  }
+
+  33% {
+    transform: translateY(-70vh);
+    background-color: orangered;
+  }
+
+  100% {
+    transform: translateX(-75vw);
+  }
+}
+
+@keyframes rightAnim {
+  0% {
+    transform: translateX(0);
+  }
+
+  20% {
+    background-color: #f837cb;
+  }
+    
+  33% {
+      background-color: #f7a13f;
+  }
+
+  50% {
     background-color: #a385f7;
+  }
+
+  75% {
+    background-color: #84eb1e;
+  }
+    
+  100% {
+    transform: translateX(-95vw);
+  }
 }
 
 #div21 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    border: 10px solid rgb(32, 245, 96);
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 10px solid #58d60f;
+  transform: translate(-50%, -50%);
 }
 
-#div21:active {
-    width: 30vh;
-    height: 30vh;
-    
-    background-color: darkmagenta;
+#div21:hover {
+  animation: div21Anim 2s infinite;
+}
+
+@keyframes div21Anim {
+  50% {
+    width: 20vh;
+    height: 20vh;
+    transform: rotate(180deg);
+    transform-origin: top left;
+    border-color: #84eb1e;
+    border-radius: 0%;
+    background-color: #db2eca;
+  }
+}
+
+.allDivs:hover {
+  animation: none;
 }
