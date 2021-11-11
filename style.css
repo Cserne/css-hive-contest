@@ -220,16 +220,16 @@ body {
 
 @keyframes div11Anim {
   0% {
-    transform: translateX(0%);
+    transform: translateX(0);
   }
 
   33% {
-    transform: translateY(85vh);
-    background-color: #ff0000;
+    transform: translateX(-200vh);
+    background-color: #ff4500;
   }
 
   66% {
-    background-color: #4169e1;
+    transform: translateY(45vh);
   }
 
   100% {
